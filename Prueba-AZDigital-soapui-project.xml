@@ -1,0 +1,2522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7549a88a-3485-4af2-8fa9-f20fac340bd5" activeEnvironment="Default" name="Prueba_AZDigital" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a9486319-22f8-4e79-88bf-6b35d8c8c93f" wsaVersion="NONE" name="ServiciosAZDigital_SOAP" type="wsdl" bindingName="{http://www.analitica.com.co/AZDigital/WS/}ServiciosAZDigital_SOAP" soapVersion="1_1" anonymous="optional" definition="http://test.analitica.com.co/AZDigital_Pruebas/WebServices/ServiciosAZDigital.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>../WebServices/SOAP/</con:endpoint></con:endpoints><con:operation id="e74c09aa-800d-4f64-9713-bcc5e28c2d4d" isOneWay="false" action="urn:#ActualizacionArchivoFisico" name="ActualizacionArchivoFisico" bindingOperationName="ActualizacionArchivoFisico" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f8626f9f-2ac8-4e94-bec8-cc9c3c2d8db5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:ActualizacionArchivoFisico>\r
+         <!--Zero or more repetitions:-->\r
+         <Contenedor Codigo="?" LoteRotulacion="?" CeldaAlmacenamiento="?" Serie="?" Descripcion="?" Tipo="?" Proposito="?" Estado="?" FechaInicial="?" FechaFinal="?"/>\r
+         <!--Zero or more repetitions:-->\r
+         <UnidadConservacion Codigo="?" LoteRotulacion="?" CodigoAlterno="?" Contenedor="?" Posicion="?" Nombre="?" Serie="?" Consecutivo="?" Correlativo="?" Tipo="?" NumeroFolios="?" FolioInicial="?" FolioFinal="?" Disposicion="?" FechaInicial="?" FechaFinal="?" FechaCierre="?" Observaciones="?" Emisor="?" Receptor="?" DescripcionTransferencia="?" FechaTransferencia="?"/>\r
+      </xsds:ActualizacionArchivoFisico>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#ActualizacionArchivoFisico"/></con:call></con:operation><con:operation id="c95cac52-8cf1-49dd-8073-a4b3da71909a" isOneWay="false" action="urn:#NewOperation" name="AdminTabla" bindingOperationName="AdminTabla" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e2a8aa10-f91d-4ad9-acd0-1faba555d7a8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/SGP/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:AdminTabla Tabla="?">\r
+         <!--You have a CHOICE of the next 4 items at this level-->\r
+         <Listar>\r
+            <!--1 or more repetitions:-->\r
+            <Campo Nombre="?"/>\r
+            <!--Zero or more repetitions:-->\r
+            <Condiciones Agrupamiento="and">\r
+               <!--1 or more repetitions:-->\r
+               <Condicion Campo="?" Operador="?" Valor="?"/>\r
+            </Condiciones>\r
+         </Listar>\r
+         <Agregar>\r
+            <!--1 or more repetitions:-->\r
+            <Campo Nombre="?" Valor="?"/>\r
+         </Agregar>\r
+         <Actualizar ValorLlave="?">\r
+            <!--1 or more repetitions:-->\r
+            <Campo Nombre="?" Valor="?"/>\r
+         </Actualizar>\r
+         <Eliminar ValorLlave="?"/>\r
+      </xsds:AdminTabla>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#NewOperation"/></con:call></con:operation><con:operation id="0ad618bd-b0f7-41e4-9437-5c8f772adb8b" isOneWay="false" action="urn:#Borrar" name="Borrar" bindingOperationName="Borrar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9ee37279-0e3b-4b93-818f-a141fcc9ecd1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   &lt;soapenv:Header/>\r
+   &lt;soapenv:Body/>\r
+&lt;/soapenv:Envelope></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Borrar"/></con:call></con:operation><con:operation id="b559f4aa-9b16-45e2-a452-b211b40bb565" isOneWay="false" action="urn:#BuscarArchivo" name="BuscarArchivo" bindingOperationName="BuscarArchivo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8652808b-7b8c-48d8-aedc-12182bfeb2a6" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://test.analitica.com.co/AZDigital_Pruebas/WebServices/SOAP/index.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:BuscarArchivo>\r
+         <Condiciones>\r
+            <!--1 or more repetitions:-->\r
+            <Condicion Tipo="FechaInicial" Expresion="2019-07-01 00:00:00"/>\r
+         </Condiciones>\r
+      </xsds:BuscarArchivo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#BuscarArchivo"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9a84c5cd-9624-422d-aa0f-d8f973593ea2" isOneWay="false" action="urn:#CambioEstadoFlujoTrabajo" name="CambiarEstadoFlujoTrabajo" bindingOperationName="CambiarEstadoFlujoTrabajo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cd4ee55c-e1b6-4267-80b9-d4b5ed5b774a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:CambiarEstadoFlujoTrabajo IdUsuario="?" TipoElemento="?" IdElemento="?" NuevoEstado="?" IdDirectorioDestino="?" FechaHoraTramitado="?">\r
+         <!--Optional:-->\r
+         <Observaciones>?</Observaciones>\r
+      </xsds:CambiarEstadoFlujoTrabajo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#CambioEstadoFlujoTrabajo"/></con:call></con:operation><con:operation id="e60a6d79-0503-43ca-ab5f-cb3ac5e1b397" isOneWay="false" action="urn:#CargarArchivo" name="CargarArchivo" bindingOperationName="CargarArchivo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ac42a3aa-a6c8-4c6e-982e-d88424eea738" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:CargarArchivo IdArchivo="?" IdDirectorio="?" PathRelativoAZ="?" Nombre="?" TipoMime="?" RadNumero="?" Codificacion="?">\r
+         <Archivo>?</Archivo>\r
+      </xsds:CargarArchivo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#CargarArchivo"/></con:call></con:operation><con:operation id="294d6292-32de-4720-8abf-b8d6680b9cb4" isOneWay="false" action="urn:#CargarCCD" name="CargarCCD" bindingOperationName="CargarCCD" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ca18fcde-bc73-4199-9577-0952e81a3bf2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:CargarCCD>\r
+         <!--Optional:-->\r
+         <InfoTabla>\r
+            <!--Optional:-->\r
+            <Titulo>?</Titulo>\r
+            <!--Optional:-->\r
+            <Version>?</Version>\r
+            <!--Optional:-->\r
+            <NumeroActoAdministrativoAprobacion>?</NumeroActoAdministrativoAprobacion>\r
+            <!--Optional:-->\r
+            <FechaActoAdministrativoAprobacion>?</FechaActoAdministrativoAprobacion>\r
+            <!--Optional:-->\r
+            <NumeroActoAdministrativoConvalidacion>?</NumeroActoAdministrativoConvalidacion>\r
+            <!--Optional:-->\r
+            <FechaActoAdministrativoConvalidacion>?</FechaActoAdministrativoConvalidacion>\r
+            <!--Optional:-->\r
+            <NumeroActoAdministrativoAdopcion>?</NumeroActoAdministrativoAdopcion>\r
+            <!--Optional:-->\r
+            <FechaActoAdministrativoAdopcion>?</FechaActoAdministrativoAdopcion>\r
+         </InfoTabla>\r
+         <!--1 or more repetitions:-->\r
+         <Dependencia Nombre="?" VersionTRDTiposDocumentales="?" CodigoDependencia="?">\r
+            <!--1 or more repetitions:-->\r
+            <Serie Nombre="?" CodigoArchivistico="?" CodigoArchivisticoSeriePadre="?" Id="?" NivelAcceso="?">\r
+               <!--Optional:-->\r
+               <RetencionFisicoGestion Tiempo="?" Unidad="?"/>\r
+               <!--Optional:-->\r
+               <RetencionFisicoCentral Tiempo="?" Unidad="?"/>\r
+               <!--Optional:-->\r
+               <DisposicionFinalFisico Id="?" Procedimiento="?"/>\r
+               <!--Optional:-->\r
+               <DisposicionFinalDigital Id="?" Procedimiento="?"/>\r
+               <!--Optional:-->\r
+               <ProcesosAsociados>?</ProcesosAsociados>\r
+               <!--Optional:-->\r
+               <FuncionesAsociadas>?</FuncionesAsociadas>\r
+               <!--Optional:-->\r
+               <ModeloArchiving>?</ModeloArchiving>\r
+               <!--Optional:-->\r
+               <TiposDocumentales>\r
+                  <!--1 or more repetitions:-->\r
+                  <TipoDocumental Nombre="?" ExtensionDocDigital="?" Id="?" Soporte="?" EsObligatorio="?"/>\r
+               </TiposDocumentales>\r
+            </Serie>\r
+         </Dependencia>\r
+      </xsds:CargarCCD>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#CargarCCD"/></con:call></con:operation><con:operation id="49f8466b-7e4d-422c-ada8-a778bfa55f90" isOneWay="false" action="urn:#CargarInventario" name="CargarInventario" bindingOperationName="CargarInventario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f63c52e0-4886-4928-9003-44085231a9ce" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:CargarInventario Operacion="?">\r
+         <!--1 or more repetitions:-->\r
+         <Serie Codigo="?" TipoCodigo="?" Nombre="?">\r
+            <!--1 or more repetitions:-->\r
+            <Contenedor Codigo="?" Tipo="?" Proposito="?" Estado="?" FechaInicial="?" FechaFinal="?" Descripcion="?" Bodega="?" Estanteria="?" CeldaAlmacenamiento="?">\r
+               <!--1 or more repetitions:-->\r
+               <UnidadConservacion Codigo="?" Nombre="?" Consecutivo="?" Correlativo="?" Tipo="?" NoFolios="?" FolioInicial="?" FolioFinal="?" Disposicion="?" FechaInicial="?" FechaFinal="?" FechaCierre="?" IdExpediente="?">\r
+                  <!--Optional:-->\r
+                  <Observaciones>?</Observaciones>\r
+                  <!--Optional:-->\r
+                  <Indice Modulo="?" Indice="?">\r
+                     <!--1 or more repetitions:-->\r
+                     <Campo Nombre="?" Valor="?"/>\r
+                  </Indice>\r
+               </UnidadConservacion>\r
+            </Contenedor>\r
+         </Serie>\r
+      </xsds:CargarInventario>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#CargarInventario"/></con:call></con:operation><con:operation id="e1e23b43-1ed6-4083-9149-f0d7ae979f20" isOneWay="false" action="urn:#CargarTVD" name="CargarTVD" bindingOperationName="CargarTVD" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3f0b62a0-a03f-415e-be5e-006a08493204" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:CargarTVD NombreEntidad="?" CodigoEntidad="?" FechaInicialPeriodo="?" FechaFinalPeriodo="?" Ciudad="?" FechaAprobacion="?">\r
+         <!--1 or more repetitions:-->\r
+         <Dependencia Codigo="?" Nombre="?">\r
+            <!--1 or more repetitions:-->\r
+            <Serie Nombre="?" CodigoArchivistico="?">\r
+               <!--Optional:-->\r
+               <TiempoRetencion Tiempo="?" Unidad="?"/>\r
+               <!--Optional:-->\r
+               <DisposicionFinal Id="?" Procedimiento="?"/>\r
+               <!--Optional:-->\r
+               <FuncionesAsociadas>?</FuncionesAsociadas>\r
+            </Serie>\r
+         </Dependencia>\r
+      </xsds:CargarTVD>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#CargarTVD"/></con:call></con:operation><con:operation id="13cddf4a-b0b5-43fa-bc1d-5c3c542e0fd7" isOneWay="false" action="urn:#Categorizar" name="Categorizar" bindingOperationName="Categorizar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="611a6e0a-2f2b-4ec8-8356-247b60b47c35" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Categorizar IdElemento="?" TipoElemento="?" ModuloCategoria="?" TablaCategoria="?" Usuario="?">\r
+         <!--1 or more repetitions:-->\r
+         <Indice Campo="?" Valor="?"/>\r
+      </xsds:Categorizar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Categorizar"/></con:call></con:operation><con:operation id="8e834b3e-e216-47bd-9b71-425ff9391f15" isOneWay="false" action="urn:#Compartir" name="Compartir" bindingOperationName="Compartir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="57ae343c-007c-449e-9001-dbc10dad97dd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Compartir Vencimiento="?">\r
+         <!--Optional:-->\r
+         <Directorios>\r
+            <!--1 or more repetitions:-->\r
+            <Directorio Id="?"/>\r
+         </Directorios>\r
+         <!--Optional:-->\r
+         <Archivos>\r
+            <!--1 or more repetitions:-->\r
+            <Archivo Id="?"/>\r
+         </Archivos>\r
+         <!--Optional:-->\r
+         <Grupos>\r
+            <!--1 or more repetitions:-->\r
+            <Grupo Id="?"/>\r
+         </Grupos>\r
+         <!--Optional:-->\r
+         <Usuarios>\r
+            <!--1 or more repetitions:-->\r
+            <Usuario Id="?"/>\r
+         </Usuarios>\r
+         <!--Optional:-->\r
+         <Emails>\r
+            <!--1 or more repetitions:-->\r
+            <DireccionEmail>?</DireccionEmail>\r
+         </Emails>\r
+         <!--Optional:-->\r
+         <Mensaje>?</Mensaje>\r
+      </xsds:Compartir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Compartir"/></con:call></con:operation><con:operation id="77bf3661-df0f-414a-9ec3-1e371ee44a10" isOneWay="false" action="urn:#ConsultarCategoria" name="ConsultarCategoria" bindingOperationName="ConsultarCategoria" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2948ce67-df4a-431c-89af-dc8e87ec88da" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:ConsultarCategoria ModuloCategoria="?" TablaCategoria="?">\r
+         <Condiciones Agrupamiento="?">\r
+            <!--1 or more repetitions:-->\r
+            <Condicion Campo="?" Operador="?" Valor="?"/>\r
+         </Condiciones>\r
+      </xsds:ConsultarCategoria>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#ConsultarCategoria"/></con:call></con:operation><con:operation id="08a31bc5-7f4f-47f7-9f8d-6896f03985f6" isOneWay="false" action="urn:#ConvertirAColeccion" name="ConvertirAColeccion" bindingOperationName="ConvertirAColeccion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="19c63ac9-7d2f-4f83-9990-342ec6470c85" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:ConvertirAColeccion IdDirectorio="?" IdUsuario="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#ConvertirAColeccion"/></con:call></con:operation><con:operation id="9ae9b05c-7492-4cd8-8d70-4f85c92c905c" isOneWay="false" action="urn:#Copiar" name="Copiar" bindingOperationName="Copiar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2903b3de-5d1d-411e-ba33-c5b5b008fc20" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Copiar TipoElemento="?" IdElemento="?" IdDirectorioDestino="?" IdUsuarioCopia="?">\r
+         <!--Optional:-->\r
+         <Destinos>\r
+            <!--1 or more repetitions:-->\r
+            <Directorio Id="?"/>\r
+         </Destinos>\r
+         <Observaciones>?</Observaciones>\r
+      </xsds:Copiar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Copiar"/></con:call></con:operation><con:operation id="2b387cfa-4b65-4269-b4c8-1042696e33ca" isOneWay="false" action="urn:#CrearDirectorio" name="CrearDirectorio" bindingOperationName="CrearDirectorio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="06da20a0-7d8a-4ec6-9e44-1331cde5894d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:CrearDirectorio Tipo="?" Nombre="?" IdPadre="?" RadNumero="?" IdUsuario="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#CrearDirectorio"/></con:call></con:operation><con:operation id="82343cf7-fa11-4121-a996-e9bdc7d8a319" isOneWay="false" action="urn:#NewOperation" name="GeneracionRotulacion" bindingOperationName="GeneracionRotulacion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c7d141ed-af07-4309-9491-d2b1412dd4fc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:GeneracionRotulacion>\r
+         <LoteRotulacion Operacion="?" Nombre="?" Descripcion="?" Serie="?" Destinatario="?"/>\r
+         <!--Zero or more repetitions:-->\r
+         <Contenedor Codigo="?" LoteRotulacion="?" CodigoAlterno="?" Estado="?" Tipo="?" CeldaAlmacenamiento="?" Serie="?" Descripcion="?" Proposito="?" FechaInicial="?" FechaFinal="?"/>\r
+         <!--Zero or more repetitions:-->\r
+         <UnidadConservacion Codigo="?" LoteRotulacion="?" CodigoAlterno="?" Nombre="?" Serie="?" Contenedor="?" Consecutivo="?" Correlativo="?" Tipo="?" NumeroFolios="?" FolioInicial="?" FolioFinal="?" Disposicion="?" FechaInicial="?" FechaFinal="?" FechaCierre="?" Posicion="?" Observaciones="?"/>\r
+      </xsds:GeneracionRotulacion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#NewOperation"/></con:call></con:operation><con:operation id="766afcf2-5eb4-47f3-9585-3e8786c4e948" isOneWay="false" action="urn:#Informar" name="Informar" bindingOperationName="Informar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0b1428cd-f6ad-4dc8-a47c-65245399b9a5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Informar TipoElemento="?" IdElemento="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Informar"/></con:call></con:operation><con:operation id="e8a40616-8d0e-4889-b615-e20da2eafecf" isOneWay="false" action="urn:#LanzarFlujoTrabajo" name="LanzarFlujoTrabajo" bindingOperationName="LanzarFlujoTrabajo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c598b8b4-61fb-463e-9f9f-8051c860480a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:LanzarFlujoTrabajo TipoElemento="?" IdElemento="?" CodigoFlujo="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#LanzarFlujoTrabajo"/></con:call></con:operation><con:operation id="21f6258a-c641-4421-b8d4-36957cb0f45b" isOneWay="false" action="urn:#Mover" name="Mover" bindingOperationName="Mover" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="563611ae-9e87-47d9-8ece-fdef97ff7b9b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Mover TipoElemento="?" IdElemento="?" IdDirectorioDestino="?" ClaseFlujo="?" EstadoFlujo="?" IdActividadFlujo="?" FechaHoraEsperadaTramite="?" IdUsuario="?" Observaciones="?" EnviarNotificacionTraslado="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Mover"/></con:call></con:operation><con:operation id="12907e01-6c50-4874-8d41-b4530fdf01d3" isOneWay="false" action="urn:#Radicar" name="Radicar" bindingOperationName="Radicar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f2f17c73-8586-4f4b-bf25-de36788dbb02" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Radicar Numero="?" Estado="?" Tramite="?" Tipo="?" Modalidad="?" Dependencia="?" ImagenAsociada="?" Sitio="?" FechaHora="?" DirectorioEnvio="?" IdReferencia="?" NoElementos="?" Courier="?" NoGuia="?" ModalidadEnvio="?" NumeroRadicadoAsociado="?" Costo="?" Peso="?" FechaHoraDespacho="?" FechaHoraRecepcion="?" UsuarioRadica="?">\r
+         <!--Optional:-->\r
+         <Asunto>?</Asunto>\r
+         <!--Optional:-->\r
+         <Observaciones>?</Observaciones>\r
+         <!--Optional:-->\r
+         <Destinatarios>\r
+            <!--1 or more repetitions:-->\r
+            <Destinatario Dependencia="?">\r
+               <!--Optional:-->\r
+               <Persona Nombre="?" TipoIdentificacion="?" Identificacion="?" Telefono1="?" Telefono2="?" Fax="?" Email="?" Cargo="?" Organizacion="?" CodigoDependencia="?" Dependencia="?">\r
+                  <Direccion Pais="?" Estado="?" Ciudad="?" CodigoPostal="?">?</Direccion>\r
+               </Persona>\r
+               <!--Optional:-->\r
+               <Organizacion Nombre="?" TipoIdentificacion="?" Identificacion="?" Telefono1="?" Telefono2="?" Fax="?" Email="?" Cargo="?" Organizacion="?" CodigoDependencia="?" Dependencia="?">\r
+                  <Direccion Pais="?" Estado="?" Ciudad="?" CodigoPostal="?">?</Direccion>\r
+               </Organizacion>\r
+            </Destinatario>\r
+         </Destinatarios>\r
+         <!--Optional:-->\r
+         <Remitentes>\r
+            <!--1 or more repetitions:-->\r
+            <Remitente Dependencia="?">\r
+               <!--Optional:-->\r
+               <Persona Nombre="?" TipoIdentificacion="?" Identificacion="?" Telefono1="?" Telefono2="?" Fax="?" Email="?" Cargo="?" Organizacion="?" CodigoDependencia="?" Dependencia="?">\r
+                  <Direccion Pais="?" Estado="?" Ciudad="?" CodigoPostal="?">?</Direccion>\r
+               </Persona>\r
+               <!--Optional:-->\r
+               <Organizacion Nombre="?" TipoIdentificacion="?" Identificacion="?" Telefono1="?" Telefono2="?" Fax="?" Email="?" Cargo="?" Organizacion="?" CodigoDependencia="?" Dependencia="?">\r
+                  <Direccion Pais="?" Estado="?" Ciudad="?" CodigoPostal="?">?</Direccion>\r
+               </Organizacion>\r
+            </Remitente>\r
+         </Remitentes>\r
+      </xsds:Radicar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Radicar"/></con:call></con:operation><con:operation id="f6b5e6d8-7744-4b5e-83e6-67d38125c1c4" isOneWay="false" action="urn:#ReemplazarEnArchivo" name="ReemplazarEnArchivo" bindingOperationName="ReemplazarEnArchivo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f9005848-5aa7-430e-8543-14191a57714b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:ReemplazarEnArchivo IdArchivo="?" MetodoReemplazo="?">\r
+         <!--1 or more repetitions:-->\r
+         <Reemplazar Etiqueta="?">?</Reemplazar>\r
+      </xsds:ReemplazarEnArchivo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#ReemplazarEnArchivo"/></con:call></con:operation><con:operation id="72f4a99f-8819-4e8a-a1b0-9b91cb4a5d01" isOneWay="false" action="urn:#RegistrarFirmaDigitalArchivo" name="RegistrarFirmaDigitalArchivo" bindingOperationName="RegistrarFirmaDigitalArchivo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c5203d48-90fd-4ff4-b3e9-3dffb8d78163" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:RegistrarFirmaDigitalArchivo IdArchivo="?" IdUsarioFirma="?" IdCertificadoEmplear="?" ClaveCertificado="?">\r
+         <!--Optional:-->\r
+         <FirmaDigital>?</FirmaDigital>\r
+         <!--Optional:-->\r
+         <LlavePublica>?</LlavePublica>\r
+         <!--Optional:-->\r
+         <RazonFirma>?</RazonFirma>\r
+      </xsds:RegistrarFirmaDigitalArchivo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#RegistrarFirmaDigitalArchivo"/></con:call></con:operation><con:operation id="4bd78e5b-b12c-4c3a-a471-18fe4c3e8a92" isOneWay="false" action="urn:#Renombrar" name="Renombrar" bindingOperationName="Renombrar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7b1c94a6-e9bb-4621-a127-e2d376ab55eb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Renombrar TipoElemento="?" IdElemento="?" NuevoNombre="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Renombrar"/></con:call></con:operation><con:operation id="f59558f7-3adc-49e2-8f4f-2c0eb12a6acc" isOneWay="false" action="urn:#SolicitarArchivo" name="SolicitarArchivo" bindingOperationName="SolicitarArchivo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8c6b15eb-d979-4b53-83cd-73e28bb624cf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>../WebServices/SOAP/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:SolicitarArchivo Id="?" NoVersion="?" Codificacion="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#SolicitarArchivo"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="96596356-3df7-4279-ba65-3ed3531f9ad6" wsaVersion="NONE" name="AlertasAZDigital_SOAP" type="wsdl" bindingName="{http://www.analitica.com.co/AZDigital/WS/}AlertasAZDigital_SOAP" soapVersion="1_1" anonymous="optional" definition="http://test.analitica.com.co/AZDigital_Pruebas/WebServices/ServiciosAZDigital.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://test.analitica.com.co/AZDigital_Pruebas/WebServices/ServiciosAZDigital.wsdl"><con:part><con:url>http://test.analitica.com.co/AZDigital_Pruebas/WebServices/ServiciosAZDigital.wsdl</con:url><con:content><![CDATA[<!--edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Sixto (Sixto)-->
+<!--edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Andres Schlesinger (Analitica)-->
+<wsdl:definitions name="ServiciosAZDigital" targetNamespace="http://www.analitica.com.co/AZDigital/WS/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:azw="http://www.analitica.com.co/AZDigital/WS/" xmlns:err="http://www.analitica.com.co/Esquemas/Errores/" xmlns:az="http://www.analitica.com.co/AZDigital/xsds/" xmlns:ns="http://www.analitica.com.co/SGP/xsds/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://www.analitica.com.co/AZDigital/WS/" elementFormDefault="qualified">
+      <xs:import namespace="http://www.analitica.com.co/AZDigital/xsds/" schemaLocation="ServiciosAZDigital.xsd"/>
+      <xs:import namespace="http://www.analitica.com.co/Esquemas/Errores/" schemaLocation="Errores.xsd"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="InformarIn">
+    <wsdl:part name="parameter" element="az:Informar"/>
+  </wsdl:message>
+  <wsdl:message name="InformarOut">
+    <wsdl:part name="parameter" element="az:Informacion"/>
+  </wsdl:message>
+  <wsdl:message name="InformarFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CrearDirectorioIn">
+    <wsdl:part name="parameter" element="az:CrearDirectorio"/>
+  </wsdl:message>
+  <wsdl:message name="CrearDirectorioOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CrearDirectorioFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="MoverIn">
+    <wsdl:part name="parameter" element="az:Mover"/>
+  </wsdl:message>
+  <wsdl:message name="MoverOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="MoverFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="RenombrarIn">
+    <wsdl:part name="parameter" element="az:Renombrar"/>
+  </wsdl:message>
+  <wsdl:message name="RenombrarOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="RenombrarFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="ConvertirAColeccionIn">
+    <wsdl:part name="parameter" element="az:ConvertirAColeccion"/>
+  </wsdl:message>
+  <wsdl:message name="ConvertirAColeccionOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="ConvertirAColeccionFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="RadicacionOut">
+    <wsdl:part name="parameter" element="az:Radicacion"/>
+  </wsdl:message>
+  <wsdl:message name="EscaneoOut">
+    <wsdl:part name="parameter" element="az:Escaneo"/>
+  </wsdl:message>
+  <wsdl:message name="NavegarIn">
+    <wsdl:part name="DiId" type="xs:integer"/>
+    <wsdl:part name="UsId" type="xs:string"/>
+    <wsdl:part name="Hash" type="xs:string"/>
+  </wsdl:message>
+  <wsdl:message name="NavegarOut">
+    <wsdl:part name="Body" type="xs:string"/>
+  </wsdl:message>
+  <wsdl:message name="RadicarIn">
+    <wsdl:part name="parameter" element="az:Radicar"/>
+  </wsdl:message>
+  <wsdl:message name="RadicarOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="RadicarFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="ReemplazarEnArchivoIn">
+    <wsdl:part name="parameter" element="az:ReemplazarEnArchivo"/>
+  </wsdl:message>
+  <wsdl:message name="ReemplazarEnArchivoOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="ReemplazarEnArchivoFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CategorizarIn">
+    <wsdl:part name="parameter" element="az:Categorizar"/>
+  </wsdl:message>
+  <wsdl:message name="CategorizarOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CategorizarFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CompartirIn">
+    <wsdl:part name="parameter" element="az:Compartir"/>
+  </wsdl:message>
+  <wsdl:message name="CompartiOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CompartirFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CopiarIn">
+    <wsdl:part name="parameter" element="az:Copiar"/>
+  </wsdl:message>
+  <wsdl:message name="CopiarOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CopiarFault"/>
+  <wsdl:message name="ConsultarCategoriaIn">
+    <wsdl:part name="parameter" element="az:ConsultarCategoria"/>
+  </wsdl:message>
+  <wsdl:message name="RtaConsultarCategoriaOut">
+    <wsdl:part name="parameter" element="az:RtaConsultarCategoria"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultarCategoriaFault"/>
+  <wsdl:message name="SolicitarArchivoIn">
+    <wsdl:part name="parameter" element="az:SolicitarArchivo"/>
+  </wsdl:message>
+  <wsdl:message name="SolicitarArchivoOut">
+    <wsdl:part name="parameter" element="az:EntregarArchivo"/>
+  </wsdl:message>
+  <wsdl:message name="SolicitarArchivoFault"/>
+  <wsdl:message name="CargarArchivoIn">
+    <wsdl:part name="parameter" element="az:CargarArchivo"/>
+  </wsdl:message>
+  <wsdl:message name="CargarArchivoOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CargarArchivoFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="AdminTablaIn">
+    <wsdl:part name="parameter" element="ns:AdminTabla"/>
+  </wsdl:message>
+  <wsdl:message name="AdminTablaOut">
+    <wsdl:part name="parameter" element="ns:AdminTablaRpt"/>
+  </wsdl:message>
+  <wsdl:message name="AdminTablaFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="LanzarFlujoTrabajoIn">
+    <wsdl:part name="parameter" element="az:LanzarFlujoTrabajo"/>
+  </wsdl:message>
+  <wsdl:message name="LanzarFlujoTrabajoOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="LanzarFlujoTrabajoFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CambiarEstadoFlujoTrabajoIn">
+    <wsdl:part name="parameter" element="az:CambiarEstadoFlujoTrabajo"/>
+  </wsdl:message>
+  <wsdl:message name="CambioEstadoFlujoTrabajoOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CambioEstadoFlujoTrabajoFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="BuscarArchivoIn">
+    <wsdl:part name="parameter" element="az:BuscarArchivo"/>
+  </wsdl:message>
+  <wsdl:message name="BuscarArchivoOut">
+    <wsdl:part name="parameter" element="az:RtaBuscarArchivo"/>
+  </wsdl:message>
+  <wsdl:message name="BuscarArchivoFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CargarCCDIn">
+    <wsdl:part name="parameter" element="az:CargarCCD"/>
+  </wsdl:message>
+  <wsdl:message name="CargarCCDout">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CargarCCDFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CargarTVDIn">
+    <wsdl:part name="parameter" element="az:CargarTVD"/>
+  </wsdl:message>
+  <wsdl:message name="CargarTVDOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CartarTVDFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CargarInventarioIn">
+    <wsdl:part name="parameter" element="az:CargarInventario"/>
+  </wsdl:message>
+  <wsdl:message name="CargarInventarioOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="CargarInventarioFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="CapturaFormularioPostIn">
+    <wsdl:part name="ArId" type="xs:long"/>
+  </wsdl:message>
+  <wsdl:message name="GeneracionRotulacionIn">
+    <wsdl:part name="parameter" element="az:GeneracionRotulacion"/>
+  </wsdl:message>
+  <wsdl:message name="GeneracionRotulacionOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="GeneracionRotulacionFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="RegistrarFirmaDigitalArchivoIn">
+    <wsdl:part name="parameter" element="az:RegistrarFirmaDigitalArchivo"/>
+  </wsdl:message>
+  <wsdl:message name="RegistrarFirmaDigitalArchivoOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="RegistrarFirmaDigitalArchivoFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="ActualizacionArchivoFisico_In">
+    <wsdl:part name="parameter" element="az:ActualizacionArchivoFisico"/>
+  </wsdl:message>
+  <wsdl:message name="ActualizacionArchivoFisicoOut">
+    <wsdl:part name="parameter" element="az:RespuestaOperacion"/>
+  </wsdl:message>
+  <wsdl:message name="ActualizacionArchivoFisicoFault">
+    <wsdl:part name="parameter" element="err:Errores"/>
+  </wsdl:message>
+  <wsdl:message name="BorrarIn"/>
+  <wsdl:message name="BorrarOut"/>
+  <wsdl:message name="NewMessage"/>
+  <wsdl:message name="BorrarFault"/>
+  <wsdl:portType name="ServiciosAZDigital_SOAP">
+    <wsdl:operation name="ActualizacionArchivoFisico">
+      <wsdl:input message="azw:ActualizacionArchivoFisico_In"/>
+      <wsdl:output message="azw:ActualizacionArchivoFisicoOut"/>
+      <wsdl:fault name="FaultName" message="azw:ActualizacionArchivoFisicoFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="AdminTabla">
+      <wsdl:input message="azw:AdminTablaIn"/>
+      <wsdl:output message="azw:AdminTablaOut"/>
+      <wsdl:fault name="Errores" message="azw:AdminTablaFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Borrar">
+      <wsdl:input message="azw:BorrarIn"/>
+      <wsdl:output message="azw:BorrarOut"/>
+      <wsdl:fault name="FaultName" message="azw:BorrarFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarArchivo">
+      <wsdl:input message="azw:BuscarArchivoIn"/>
+      <wsdl:output message="azw:BuscarArchivoOut"/>
+      <wsdl:fault name="FaultName" message="azw:BuscarArchivoFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarArchivo">
+      <wsdl:input message="azw:CargarArchivoIn"/>
+      <wsdl:output message="azw:CargarArchivoOut"/>
+      <wsdl:fault name="Errores" message="azw:CargarArchivoFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarCCD">
+      <wsdl:input message="azw:CargarCCDIn"/>
+      <wsdl:output message="azw:CargarCCDout"/>
+      <wsdl:fault name="FaultName" message="azw:CargarCCDFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarInventario">
+      <wsdl:input message="azw:CargarInventarioIn"/>
+      <wsdl:output message="azw:CargarInventarioOut"/>
+      <wsdl:fault name="FaultName" message="azw:CargarInventarioFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarTVD">
+      <wsdl:input message="azw:CargarTVDIn"/>
+      <wsdl:output message="azw:CargarTVDOut"/>
+      <wsdl:fault name="FaultName" message="azw:CartarTVDFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Categorizar">
+      <wsdl:input message="azw:CategorizarIn"/>
+      <wsdl:output message="azw:CategorizarOut"/>
+      <wsdl:fault name="Errores" message="azw:CategorizarFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Compartir">
+      <wsdl:input message="azw:CompartirIn"/>
+      <wsdl:output message="azw:CompartiOut"/>
+      <wsdl:fault name="Errores" message="azw:CompartirFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCategoria">
+      <wsdl:input message="azw:ConsultarCategoriaIn"/>
+      <wsdl:output message="azw:RtaConsultarCategoriaOut"/>
+      <wsdl:fault name="Errores" message="azw:ConsultarCategoriaFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertirAColeccion">
+      <wsdl:input message="azw:ConvertirAColeccionIn"/>
+      <wsdl:output message="azw:ConvertirAColeccionOut"/>
+      <wsdl:fault name="Errores" message="azw:ConvertirAColeccionFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Copiar">
+      <wsdl:input message="azw:CopiarIn"/>
+      <wsdl:output message="azw:CopiarOut"/>
+      <wsdl:fault name="Errores" message="azw:CopiarFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="CrearDirectorio">
+      <wsdl:input message="azw:CrearDirectorioIn"/>
+      <wsdl:output message="azw:CrearDirectorioOut"/>
+      <wsdl:fault name="Errores" message="azw:CrearDirectorioFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="GeneracionRotulacion">
+      <wsdl:input message="azw:GeneracionRotulacionIn"/>
+      <wsdl:output message="azw:GeneracionRotulacionOut"/>
+      <wsdl:fault name="FaultName" message="azw:GeneracionRotulacionFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Informar">
+      <wsdl:input message="azw:InformarIn"/>
+      <wsdl:output message="azw:InformarOut"/>
+      <wsdl:fault name="Errores" message="azw:InformarFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="LanzarFlujoTrabajo">
+      <wsdl:input message="azw:LanzarFlujoTrabajoIn"/>
+      <wsdl:output message="azw:LanzarFlujoTrabajoOut"/>
+      <wsdl:fault name="FaultName" message="azw:LanzarFlujoTrabajoFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoFlujoTrabajo">
+      <wsdl:input message="azw:CambiarEstadoFlujoTrabajoIn"/>
+      <wsdl:output message="azw:CambioEstadoFlujoTrabajoOut"/>
+      <wsdl:fault name="FaultName" message="azw:CambioEstadoFlujoTrabajoFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Mover">
+      <wsdl:input message="azw:MoverIn"/>
+      <wsdl:output message="azw:MoverOut"/>
+      <wsdl:fault name="Errores" message="azw:MoverFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Radicar">
+      <wsdl:input message="azw:RadicarIn"/>
+      <wsdl:output message="azw:RadicarOut"/>
+      <wsdl:fault name="Errores" message="azw:RadicarFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="ReemplazarEnArchivo">
+      <wsdl:input message="azw:ReemplazarEnArchivoIn"/>
+      <wsdl:output message="azw:ReemplazarEnArchivoOut"/>
+      <wsdl:fault name="Errores" message="azw:ReemplazarEnArchivoFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Renombrar">
+      <wsdl:input message="azw:RenombrarIn"/>
+      <wsdl:output message="azw:RenombrarOut"/>
+      <wsdl:fault name="Errores" message="azw:RenombrarFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarArchivo">
+      <wsdl:input message="azw:SolicitarArchivoIn"/>
+      <wsdl:output message="azw:SolicitarArchivoOut"/>
+      <wsdl:fault name="Errores" message="azw:SolicitarArchivoFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarFirmaDigitalArchivo">
+      <wsdl:input message="azw:RegistrarFirmaDigitalArchivoIn"/>
+      <wsdl:output message="azw:RegistrarFirmaDigitalArchivoOut"/>
+      <wsdl:fault name="FaultName" message="azw:RegistrarFirmaDigitalArchivoFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiciosAZDigital_Get">
+    <wsdl:operation name="Navegar">
+      <wsdl:input message="azw:NavegarIn"/>
+      <wsdl:output message="azw:NavegarOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AlertasAZDigital_SOAP">
+    <wsdl:operation name="Escaneo">
+      <wsdl:output message="azw:EscaneoOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Radicacion">
+      <wsdl:output message="azw:RadicacionOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiciosAZDigital_Post">
+    <wsdl:operation name="CapturaFormularioPost">
+      <wsdl:input message="azw:CapturaFormularioPostIn"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiciosAZDigital_SOAP" type="azw:ServiciosAZDigital_SOAP">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ActualizacionArchivoFisico">
+      <soap:operation soapAction="urn:#ActualizacionArchivoFisico"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="AdminTabla">
+      <soap:operation soapAction="urn:#NewOperation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="Borrar">
+      <soap:operation soapAction="urn:#Borrar"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarArchivo">
+      <soap:operation soapAction="urn:#BuscarArchivo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarArchivo">
+      <soap:operation soapAction="urn:#CargarArchivo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarCCD">
+      <soap:operation soapAction="urn:#CargarCCD"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarInventario">
+      <soap:operation soapAction="urn:#CargarInventario"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="CargarTVD">
+      <soap:operation soapAction="urn:#CargarTVD"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="Categorizar">
+      <soap:operation soapAction="urn:#Categorizar"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="Compartir">
+      <soap:operation soapAction="urn:#Compartir"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCategoria">
+      <soap:operation soapAction="urn:#ConsultarCategoria"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertirAColeccion">
+      <soap:operation soapAction="urn:#ConvertirAColeccion"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="Copiar">
+      <soap:operation soapAction="urn:#Copiar"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="CrearDirectorio">
+      <soap:operation soapAction="urn:#CrearDirectorio"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="GeneracionRotulacion">
+      <soap:operation soapAction="urn:#NewOperation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="Informar">
+      <soap:operation soapAction="urn:#Informar"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="LanzarFlujoTrabajo">
+      <soap:operation soapAction="urn:#LanzarFlujoTrabajo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarEstadoFlujoTrabajo">
+      <soap:operation soapAction="urn:#CambioEstadoFlujoTrabajo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+    <wsdl:operation name="Mover">
+      <soap:operation soapAction="urn:#Mover"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="Radicar">
+      <soap:operation soapAction="urn:#Radicar"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="ReemplazarEnArchivo">
+      <soap:operation soapAction="urn:#ReemplazarEnArchivo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="Renombrar">
+      <soap:operation soapAction="urn:#Renombrar"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarArchivo">
+      <soap:operation soapAction="urn:#SolicitarArchivo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Errores"/>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarFirmaDigitalArchivo">
+      <soap:operation soapAction="urn:#RegistrarFirmaDigitalArchivo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultName"/>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiciosAZDigital_Get" type="azw:ServiciosAZDigital_Get">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="Navegar">
+      <http:operation location="/Navegar"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AlertasAZDigital_SOAP" type="azw:AlertasAZDigital_SOAP">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Escaneo">
+      <soap:operation soapAction="urn:#Escaneo"/>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Radicacion">
+      <soap:operation soapAction="urn:#Radicacion"/>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiciosAZDigital_Post" type="azw:ServiciosAZDigital_Post">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="CapturaFormularioPost">
+      <http:operation location="/CapturaFormularioPost"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiciosAZDigital">
+    <wsdl:port name="ServiciosAZDigital_SOAP" binding="azw:ServiciosAZDigital_SOAP">
+      <soap:address location="../WebServices/SOAP/"/>
+    </wsdl:port>
+    <wsdl:port name="ServiciosAZDigital_Get" binding="azw:ServiciosAZDigital_Get">
+      <http:address location="../ControlAdmin/index.php"/>
+    </wsdl:port>
+    <wsdl:port name="ServiciosAZDigital_Post" binding="azw:ServiciosAZDigital_Post">
+      <http:address location="../CapturaFormularioPost/CapturaFormularioPost.php"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://test.analitica.com.co/AZDigital_Pruebas/WebServices/ServiciosAZDigital.xsd</con:url><con:content><![CDATA[<!--edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Sixto (Sixto)-->
+<!--edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Andres Schlesinger (Analitica)-->
+<xs:schema targetNamespace="http://www.analitica.com.co/AZDigital/xsds/" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:ns1="http://www.analitica.com.co/SGP/xsds/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:az="http://www.analitica.com.co/AZDigital/xsds/" xmlns:altova="http://www.altova.com/xml-schema-extensions">
+  <xs:import namespace="http://www.analitica.com.co/SGP/xsds/" schemaLocation="AdminTabla.xsd"/>
+  <xs:element name="Copiar">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Copiar documentos</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Destinos" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Directorio" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Observaciones"/>
+      </xs:sequence>
+      <xs:attribute name="TipoElemento" type="az:TipoElementoType" use="required"/>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="IdDirectorioDestino" type="az:IdElementoType"/>
+      <xs:attribute name="IdUsuarioCopia" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Mover">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Mover documentos o directorios</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TipoElemento" type="az:TipoElementoType" use="required"/>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="IdDirectorioDestino" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="ClaseFlujo" type="xs:string"/>
+      <xs:attribute name="EstadoFlujo" type="xs:string"/>
+      <xs:attribute name="IdActividadFlujo"/>
+      <xs:attribute name="FechaHoraEsperadaTramite" type="xs:string"/>
+      <xs:attribute name="IdUsuario" type="xs:string"/>
+      <xs:attribute name="Observaciones" type="xs:string"/>
+      <xs:attribute name="EnviarNotificacionTraslado">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="SI"/>
+            <xs:enumeration value="NO"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Borrar">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Mover documentos o directorios</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TipoElemento" type="az:TipoElementoType" use="required"/>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="IdUsuario" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Radicar">
+    <xs:annotation>
+      <xs:documentation>Definición del Radicado a Crear</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Asunto" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="255"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Observaciones" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="255"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Destinatarios" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Destinatario" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Persona" type="az:PersonaType" minOccurs="0"/>
+                    <xs:element name="Organizacion" type="az:PersonaType" minOccurs="0"/>
+                  </xs:sequence>
+                  <xs:attribute name="Dependencia" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Remitentes" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Remitente" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Persona" type="az:PersonaType" minOccurs="0"/>
+                    <xs:element name="Organizacion" type="az:PersonaType" minOccurs="0"/>
+                  </xs:sequence>
+                  <xs:attribute name="Dependencia" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Numero"/>
+      <xs:attribute name="Estado" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Cr"/>
+            <xs:enumeration value="As"/>
+            <xs:enumeration value="DiS"/>
+            <xs:enumeration value="DeS"/>
+            <xs:enumeration value="Ent"/>
+            <xs:enumeration value="Dev"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Tramite" use="required"/>
+      <xs:attribute name="Tipo" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="E"/>
+            <xs:enumeration value="S"/>
+            <xs:enumeration value="I"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Modalidad" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="D"/>
+            <xs:enumeration value="E"/>
+            <xs:enumeration value="O"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Dependencia" type="xs:string" use="required"/>
+      <xs:attribute name="ImagenAsociada" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Sitio" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="FechaHora" type="xs:dateTime"/>
+      <xs:attribute name="DirectorioEnvio" type="az:IdElementoType"/>
+      <xs:attribute name="IdReferencia" type="xs:string"/>
+      <xs:attribute name="NoElementos" type="xs:positiveInteger" use="optional"/>
+      <xs:attribute name="Courier" type="xs:positiveInteger"/>
+      <xs:attribute name="NoGuia"/>
+      <xs:attribute name="ModalidadEnvio" type="xs:string"/>
+      <xs:attribute name="NumeroRadicadoAsociado" type="xs:string" use="optional"/>
+      <xs:attribute name="Costo" type="xs:decimal"/>
+      <xs:attribute name="Peso" type="xs:decimal"/>
+      <xs:attribute name="FechaHoraDespacho" type="xs:dateTime"/>
+      <xs:attribute name="FechaHoraRecepcion" type="xs:dateTime"/>
+      <xs:attribute name="UsuarioRadica" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Radicacion" type="az:RadicadoType">
+    <xs:annotation>
+      <xs:documentation>Alerta: creacion de un nuevo radicado</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Escaneo">
+    <xs:annotation>
+      <xs:documentation>Alerta: Asociacion de un documento escaneado a un radicado</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="Expediente" type="az:ExpedienteType"/>
+        <xs:element name="Documento" type="az:DocumentoType"/>
+      </xs:choice>
+      <xs:attribute name="IdReferencia" type="az:IdElementoType" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RespuestaOperacion">
+    <xs:annotation>
+      <xs:documentation>Respuesta: Resultado Operación Radicar</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Estado" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ok"/>
+            <xs:enumeration value="Error"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="NuevoDiId" use="optional"/>
+      <xs:attribute name="DiColeccion" use="optional"/>
+      <xs:attribute name="NuevoRaId" use="optional"/>
+      <xs:attribute name="NuevoRaNumero" use="optional"/>
+      <xs:attribute name="NuevoRaFechaHora" use="optional"/>
+      <xs:attribute name="NuevoArId" use="optional"/>
+      <xs:attribute name="InstanciaProcesoId" use="optional"/>
+      <xs:attribute name="DirectorioPadreDiId" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Renombrar">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Renombrar documentos o directorios</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TipoElemento" type="az:TipoElementoType" use="required"/>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="NuevoNombre" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Informar">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Obtener informacion de un documento o directorios</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TipoElemento" type="az:TipoElementoType" use="required"/>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InformarRadicado">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Obtener informacion de un radicado</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="IdRadicado" type="az:IdElementoType" use="optional"/>
+      <xs:attribute name="NumeroRadicado" type="xs:string" use="optional"/>
+      <xs:attribute name="NumeroRadicadoHijo" type="xs:string" use="optional"/>
+      <xs:attribute name="IdTipoRadicado" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Informacion">
+    <xs:annotation>
+      <xs:documentation>Respuesta: Solicitud de informacion (Informar)</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="Archivo">
+          <xs:complexType>
+            <xs:complexContent>
+              <xs:extension base="az:ArchivoType"/>
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Directorio">
+          <xs:complexType>
+            <xs:complexContent>
+              <xs:extension base="az:DirectorioType">
+                <xs:sequence>
+                  <xs:element name="Directorio" type="az:DirectorioType" minOccurs="0" maxOccurs="unbounded"/>
+                  <xs:element name="Archivo" type="az:ArchivoType" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearDirectorio">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Crear directorios</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="Tipo" type="az:TipoDirectorioType" use="required"/>
+      <xs:attribute name="Nombre" type="xs:string" use="required"/>
+      <xs:attribute name="IdPadre" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="RadNumero"/>
+      <xs:attribute name="IdUsuario" type="az:IdUsuarioType" use="optional">
+        <xs:annotation>
+          <xs:documentation>El usuario se usa para asignar un Administrador cuando se crea un directorio (Tipo = C)</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertirAColeccion">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Convertir un directorio en coleccion</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="IdDirectorio" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="IdUsuario" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReemplazarEnArchivo">
+    <xs:annotation>
+      <xs:documentation>Descripcion de la Operacion de Reemplazo de texto en un archivo</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Reemplazar" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="Etiqueta" use="required">
+                  <xs:annotation>
+                    <xs:documentation>Evitar tildes y caracteres Especiales en la seleccion de la etiqueta. Puesto que Generan cambios en la representacion interna de Word (No queda como una cadena continua sino partida en pedazos.) Una Vez esto ocurre los mejor es eliminar totalmente la etiqueta del archivo WORD y crearlo de nuevo.</xs:documentation>
+                  </xs:annotation>
+                </xs:attribute>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="IdArchivo" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="MetodoReemplazo" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Word"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categorizar">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Categorizar e indexar un archivo o directorio dado.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Indice" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Campo" type="xs:string" use="required"/>
+            <xs:attribute name="Valor" type="xs:anySimpleType" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="TipoElemento" use="required">
+        <xs:simpleType>
+          <xs:restriction base="az:TipoElementoType"/>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ModuloCategoria" type="xs:string" use="required"/>
+      <xs:attribute name="TablaCategoria" type="xs:string" use="required"/>
+      <xs:attribute name="Usuario" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCategoria">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Descargar los archivos que corresponden a la informacion de indexacion</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Condiciones" type="az:CondicionesType"/>
+      </xs:sequence>
+      <xs:attribute name="ModuloCategoria" type="xs:string" use="required"/>
+      <xs:attribute name="TablaCategoria" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RtaConsultarCategoria">
+    <xs:annotation>
+      <xs:documentation>Respueta a la consulta por categorias</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Directorio" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:complexContent>
+              <xs:extension base="az:DirectorioType">
+                <xs:sequence>
+                  <xs:element name="Indexacion" type="az:IndexacionType"/>
+                  <xs:element name="Archivos" minOccurs="0">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Archivo" maxOccurs="unbounded">
+                          <xs:complexType>
+                            <xs:complexContent>
+                              <xs:extension base="az:ArchivoType"/>
+                            </xs:complexContent>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Archivo" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:complexContent>
+              <xs:extension base="az:ArchivoType">
+                <xs:sequence>
+                  <xs:element name="Indexacion" type="az:IndexacionType"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="ModuloCategoria" type="xs:string" use="required"/>
+      <xs:attribute name="TablaCategoria" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Compartir">
+    <xs:annotation>
+      <xs:documentation>Solicitud para: Compartir con grupos, usuario o email individuales un archivo o directorio espesifico.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Directorios" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Directorio" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Id" type="az:IdElementoType" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Archivos" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Archivo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Id" type="az:IdElementoType" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Grupos" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grupo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Id" type="az:IdElementoType" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Usuarios" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Usuario" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Id" type="az:IdUsuarioType" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Emails" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DireccionEmail" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Mensaje" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Vencimiento" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarArchivo">
+    <xs:annotation>
+      <xs:documentation>Solicita al sistema un archivo dado el Id</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="Id" type="xs:integer" use="required"/>
+      <xs:attribute name="NoVersion" type="xs:integer"/>
+      <xs:attribute name="Codificacion">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Base64"/>
+            <xs:enumeration value="Sha1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EntregarArchivo">
+    <xs:annotation>
+      <xs:documentation>Entrega el archivo solicitado.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Archivo" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="Id"/>
+      <xs:attribute name="Nombre"/>
+      <xs:attribute name="TipoMime" use="required"/>
+      <xs:attribute name="Codificacion" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="Base64"/>
+            <xs:pattern value="Sha1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarArchivo">
+    <xs:annotation>
+      <xs:documentation>Carga un archivo en AZDigital dado el Id del directorio destino</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Archivo"/>
+      </xs:sequence>
+      <xs:attribute name="IdArchivo"/>
+      <xs:attribute name="IdDirectorio" use="required"/>
+      <xs:attribute name="PathRelativoAZ"/>
+      <xs:attribute name="Nombre" use="required"/>
+      <xs:attribute name="TipoMime"/>
+      <xs:attribute name="RadNumero"/>
+      <xs:attribute name="Codificacion" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Base64"/>
+            <xs:enumeration value="Path"/>
+            <xs:enumeration value="Href"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarFirmaDigitalArchivo">
+    <xs:annotation>
+      <xs:documentation>Registra una firma digital para un archivo</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FirmaDigital" minOccurs="0"/>
+        <xs:element name="LlavePublica" minOccurs="0"/>
+        <xs:element name="RazonFirma" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="IdArchivo" type="xs:int" use="required"/>
+      <xs:attribute name="IdUsarioFirma" type="xs:string" use="required"/>
+      <xs:attribute name="IdCertificadoEmplear" type="xs:int"/>
+      <xs:attribute name="ClaveCertificado" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarRevocacionCertDigital">
+    <xs:annotation>
+      <xs:documentation>Valida que un certificado digital no haya sido revocado por Certicamara</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CertificadoDidigital"/>
+      </xs:sequence>
+      <xs:attribute name="EntidadCertificadora" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LanzarFlujoTrabajo">
+    <xs:annotation>
+      <xs:documentation>Lanza un flujo de trabajo sobre una carpeta o un archivo</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TipoElemento" type="az:TipoElementoType" use="required"/>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="CodigoFlujo" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarEstadoFlujoTrabajo">
+    <xs:annotation>
+      <xs:documentation>Realiza el cambio de estado de un flujo de trabajo sobre una carpeta o un archivo</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Observaciones" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="0"/>
+              <xs:maxLength value="255"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="IdUsuario" type="az:IdUsuarioType" use="required"/>
+      <xs:attribute name="TipoElemento" type="az:TipoElementoType" use="required"/>
+      <xs:attribute name="IdElemento" type="az:IdElementoType" use="required"/>
+      <xs:attribute name="NuevoEstado" type="xs:string" use="required"/>
+      <xs:attribute name="IdDirectorioDestino" type="az:IdElementoType" use="optional"/>
+      <xs:attribute name="FechaHoraTramitado" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarArchivo">
+    <xs:annotation>
+      <xs:documentation>Consulta que documentos coinciden con el texto de busqueda proporcionado</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Condiciones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Condicion" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Tipo">
+                    <xs:annotation>
+                      <xs:appinfo>
+                        <altova:exampleValues>
+                          <altova:example value="Contenido"/>
+                        </altova:exampleValues>
+                      </xs:appinfo>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Contenido"/>
+                        <xs:enumeration value="FechaInicial"/>
+                        <xs:enumeration value="FechaFinal"/>
+                        <xs:enumeration value="Extension"/>
+                        <xs:enumeration value="Proximidad"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="Expresion"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="IdUsuarioBusqueda" type="xs:string"/>
+      <xs:attribute name="IdDirectorioBusqueda" type="xs:int"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RtaBuscarArchivo">
+    <xs:annotation>
+      <xs:documentation>Respueta a la consulta por contenido de documentos</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Archivo" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:complexContent>
+              <xs:extension base="az:ArchivoType"/>
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarCCD">
+    <xs:annotation>
+      <xs:documentation>Solicitud para Cargar CCD (cuadro de clasificacion Documental</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="InfoTabla" type="az:InfoTRDType" minOccurs="0"/>
+        <xs:element name="Dependencia" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Serie" type="az:SerieType" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="Nombre"/>
+            <xs:attribute name="VersionTRDTiposDocumentales"/>
+            <xs:attribute name="CodigoDependencia" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="20"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarTVD">
+    <xs:annotation>
+      <xs:documentation>Solicitud para Cargar Valoración Documental</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Dependencia" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Serie" type="az:SerieTypeVD" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="Codigo" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="20"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="Nombre" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="NombreEntidad" type="xs:string"/>
+      <xs:attribute name="CodigoEntidad" type="xs:string"/>
+      <xs:attribute name="FechaInicialPeriodo" type="xs:string"/>
+      <xs:attribute name="FechaFinalPeriodo" type="xs:string"/>
+      <xs:attribute name="Ciudad"/>
+      <xs:attribute name="FechaAprobacion"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarInventario">
+    <xs:annotation>
+      <xs:documentation>Carga de Inventario</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Serie" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Contenedor" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="UnidadConservacion" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Observaciones" minOccurs="0">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:minLength value="0"/>
+                                <xs:maxLength value="255"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="Indice" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Campo" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="Nombre" use="required"/>
+                                    <xs:attribute name="Valor" use="required"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Modulo" use="required"/>
+                              <xs:attribute name="Indice" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Codigo" use="required"/>
+                        <xs:attribute name="Nombre"/>
+                        <xs:attribute name="Consecutivo" type="xs:integer"/>
+                        <xs:attribute name="Correlativo" type="xs:integer"/>
+                        <xs:attribute name="Tipo"/>
+                        <xs:attribute name="NoFolios" type="xs:integer"/>
+                        <xs:attribute name="FolioInicial" type="xs:integer"/>
+                        <xs:attribute name="FolioFinal" type="xs:integer"/>
+                        <xs:attribute name="Disposicion"/>
+                        <xs:attribute name="FechaInicial" type="xs:dateTime"/>
+                        <xs:attribute name="FechaFinal" type="xs:dateTime"/>
+                        <xs:attribute name="FechaCierre" type="xs:dateTime"/>
+                        <xs:attribute name="IdExpediente"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Codigo" use="required"/>
+                  <xs:attribute name="Tipo"/>
+                  <xs:attribute name="Proposito"/>
+                  <xs:attribute name="Estado"/>
+                  <xs:attribute name="FechaInicial"/>
+                  <xs:attribute name="FechaFinal"/>
+                  <xs:attribute name="Descripcion"/>
+                  <xs:attribute name="Bodega"/>
+                  <xs:attribute name="Estanteria"/>
+                  <xs:attribute name="CeldaAlmacenamiento"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Codigo" use="required"/>
+            <xs:attribute name="TipoCodigo" use="required">
+              <xs:annotation>
+                <xs:appinfo>
+                  <altova:exampleValues>
+                    <altova:example value="IdSerie"/>
+                    <altova:example value="Archivistico"/>
+                  </altova:exampleValues>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Nombre"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Operacion"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeneracionRotulacion">
+    <xs:annotation>
+      <xs:documentation>Edicion y Asociacion de Archivo Fisico</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LoteRotulacion">
+          <xs:complexType>
+            <xs:attribute name="Operacion" use="required">
+              <xs:annotation>
+                <xs:appinfo>
+                  <altova:exampleValues>
+                    <altova:example value="Crear"/>
+                    <altova:example value="Editar"/>
+                  </altova:exampleValues>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Nombre" type="xs:string" use="required"/>
+            <xs:attribute name="Descripcion" type="xs:string"/>
+            <xs:attribute name="Serie" type="xs:string"/>
+            <xs:attribute name="Destinatario" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Contenedor" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Codigo" use="required"/>
+            <xs:attribute name="LoteRotulacion" use="required"/>
+            <xs:attribute name="CodigoAlterno" use="optional"/>
+            <xs:attribute name="Estado" use="required"/>
+            <xs:attribute name="Tipo" use="required"/>
+            <xs:attribute name="CeldaAlmacenamiento"/>
+            <xs:attribute name="Serie"/>
+            <xs:attribute name="Descripcion" type="xs:string"/>
+            <xs:attribute name="Proposito"/>
+            <xs:attribute name="FechaInicial" type="xs:dateTime"/>
+            <xs:attribute name="FechaFinal" type="xs:dateTime"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UnidadConservacion" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Codigo" use="required"/>
+            <xs:attribute name="LoteRotulacion" use="required"/>
+            <xs:attribute name="CodigoAlterno"/>
+            <xs:attribute name="Nombre"/>
+            <xs:attribute name="Serie"/>
+            <xs:attribute name="Contenedor"/>
+            <xs:attribute name="Consecutivo" type="xs:integer"/>
+            <xs:attribute name="Correlativo" type="xs:integer"/>
+            <xs:attribute name="Tipo"/>
+            <xs:attribute name="NumeroFolios" type="xs:integer"/>
+            <xs:attribute name="FolioInicial" type="xs:integer"/>
+            <xs:attribute name="FolioFinal" type="xs:integer"/>
+            <xs:attribute name="Disposicion"/>
+            <xs:attribute name="FechaInicial" type="xs:dateTime"/>
+            <xs:attribute name="FechaFinal" type="xs:dateTime"/>
+            <xs:attribute name="FechaCierre" type="xs:dateTime"/>
+            <xs:attribute name="Posicion"/>
+            <xs:attribute name="Observaciones"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizacionArchivoFisico">
+    <xs:annotation>
+      <xs:documentation>Edicion y Asociacion de Archivo Fisico</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Contenedor" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Codigo" use="required"/>
+            <xs:attribute name="LoteRotulacion"/>
+            <xs:attribute name="CeldaAlmacenamiento"/>
+            <xs:attribute name="Serie"/>
+            <xs:attribute name="Descripcion" type="xs:string"/>
+            <xs:attribute name="Tipo"/>
+            <xs:attribute name="Proposito"/>
+            <xs:attribute name="Estado"/>
+            <xs:attribute name="FechaInicial" type="xs:dateTime"/>
+            <xs:attribute name="FechaFinal" type="xs:dateTime"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UnidadConservacion" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Codigo" use="required"/>
+            <xs:attribute name="LoteRotulacion"/>
+            <xs:attribute name="CodigoAlterno"/>
+            <xs:attribute name="Contenedor"/>
+            <xs:attribute name="Posicion"/>
+            <xs:attribute name="Nombre"/>
+            <xs:attribute name="Serie"/>
+            <xs:attribute name="Consecutivo" type="xs:integer"/>
+            <xs:attribute name="Correlativo" type="xs:integer"/>
+            <xs:attribute name="Tipo"/>
+            <xs:attribute name="NumeroFolios" type="xs:integer"/>
+            <xs:attribute name="FolioInicial" type="xs:integer"/>
+            <xs:attribute name="FolioFinal" type="xs:integer"/>
+            <xs:attribute name="Disposicion"/>
+            <xs:attribute name="FechaInicial" type="xs:dateTime"/>
+            <xs:attribute name="FechaFinal" type="xs:dateTime"/>
+            <xs:attribute name="FechaCierre" type="xs:dateTime"/>
+            <xs:attribute name="Observaciones"/>
+            <xs:attribute name="Emisor"/>
+            <xs:attribute name="Receptor"/>
+            <xs:attribute name="DescripcionTransferencia"/>
+            <xs:attribute name="FechaTransferencia" type="xs:date"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="IdElementoType">
+    <xs:annotation>
+      <xs:documentation>Definición Id Elemento (Entero Positivo)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:unsignedLong"/>
+  </xs:simpleType>
+  <xs:simpleType name="TipoElementoType">
+    <xs:annotation>
+      <xs:documentation>Definición del tipo Elemento (Archivo, Directorio)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Archivo"/>
+      <xs:enumeration value="Directorio"/>
+      <xs:enumeration value="Unidad de Conservacion"/>
+      <xs:enumeration value="Contenedor"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TipoDirectorioType">
+    <xs:annotation>
+      <xs:documentation>Definición de Tipos de Directorio</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="R">
+        <xs:annotation>
+          <xs:documentation>Nodo Estructural</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C">
+        <xs:annotation>
+          <xs:documentation>Coleccion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="P">
+        <xs:annotation>
+          <xs:documentation>Carpeta Publica</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D">
+        <xs:annotation>
+          <xs:documentation>Carpeta Privada</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E">
+        <xs:annotation>
+          <xs:documentation>Bandeja de Entrada</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="T">
+        <xs:annotation>
+          <xs:documentation>Tabla</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="IdUsuarioType">
+    <xs:annotation>
+      <xs:documentation>Definición de Id de Usuario</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArchivoType">
+    <xs:annotation>
+      <xs:documentation>Definición del tipo Archivo</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Id" type="az:IdElementoType" use="required"/>
+    <xs:attribute name="Nombre" type="xs:string" use="required"/>
+    <xs:attribute name="TipoMIME" type="xs:string"/>
+    <xs:attribute name="Categoria" type="xs:string"/>
+    <xs:attribute name="Version"/>
+    <xs:attribute name="Observaciones"/>
+    <xs:attribute name="Etiqueta"/>
+    <xs:attribute name="IdDirectorioPadre" type="xs:integer"/>
+  </xs:complexType>
+  <xs:complexType name="CampoType">
+    <xs:annotation>
+      <xs:documentation>Tipo Campo para AdminTabla</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Nombre" type="xs:string" use="required"/>
+    <xs:attribute name="Valor" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="CondicionType">
+    <xs:annotation>
+      <xs:documentation>Tipo Costructor de una Condicion</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Campo" use="required"/>
+    <xs:attribute name="Operador" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="="/>
+          <xs:pattern value="&lt;"/>
+          <xs:pattern value="&lt;="/>
+          <xs:pattern value=">"/>
+          <xs:pattern value=">="/>
+          <xs:pattern value="!="/>
+          <xs:pattern value="like"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="Valor" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="CondicionesType">
+    <xs:annotation>
+      <xs:documentation>Tipo Agregador de Condiciones</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Condicion" type="az:CondicionType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Agrupamiento">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="and"/>
+          <xs:pattern value="or"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DirectorioType">
+    <xs:annotation>
+      <xs:documentation>Definición del tipo Directorio</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Id" type="az:IdElementoType" use="required"/>
+    <xs:attribute name="Tipo" type="xs:string" use="required"/>
+    <xs:attribute name="Nombre" type="xs:string" use="required"/>
+    <xs:attribute name="Categoria" type="xs:string" use="optional"/>
+    <xs:attribute name="IdDirectorioPadre" type="xs:integer"/>
+  </xs:complexType>
+  <xs:complexType name="DocumentoType">
+    <xs:annotation>
+      <xs:documentation>Definición del tipo Documento</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Radicado" type="az:RadicadoType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="ArchivoId" type="az:IdElementoType" use="required"/>
+    <xs:attribute name="ArchivoNombre" type="xs:string" use="optional"/>
+    <xs:attribute name="ArchivoPath" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ExpedienteType">
+    <xs:annotation>
+      <xs:documentation>Definición del tipo Expediente</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Radicado" type="az:RadicadoType" minOccurs="0"/>
+      <xs:element name="Archivo" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="ArchivoId" use="required"/>
+          <xs:attribute name="ArchivoNombre" use="optional"/>
+          <xs:attribute name="ArchivoPath" use="optional"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="DirectorioId" type="az:IdElementoType" use="required"/>
+    <xs:attribute name="DirectorioNombre" type="xs:string" use="optional"/>
+    <xs:attribute name="DirectorioPath" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="IndexacionType">
+    <xs:annotation>
+      <xs:documentation>Tipo Estructura de Indización</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Indice" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="Nombre" type="xs:string" use="required"/>
+          <xs:attribute name="Valor" type="xs:anySimpleType"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PersonaType">
+    <xs:annotation>
+      <xs:documentation>Definicion de Personas</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Direccion">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="Pais"/>
+              <xs:attribute name="Estado"/>
+              <xs:attribute name="Ciudad"/>
+              <xs:attribute name="CodigoPostal"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Nombre"/>
+    <xs:attribute name="TipoIdentificacion"/>
+    <xs:attribute name="Identificacion"/>
+    <xs:attribute name="Telefono1"/>
+    <xs:attribute name="Telefono2"/>
+    <xs:attribute name="Fax"/>
+    <xs:attribute name="Email"/>
+    <xs:attribute name="Cargo"/>
+    <xs:attribute name="Organizacion"/>
+    <xs:attribute name="CodigoDependencia"/>
+    <xs:attribute name="Dependencia"/>
+  </xs:complexType>
+  <xs:complexType name="RadicadoType">
+    <xs:annotation>
+      <xs:documentation>Definicion de la estructra de datos necesaria para crear un radicado</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Id" type="az:IdElementoType" use="required"/>
+    <xs:attribute name="Numero" type="xs:string" use="required"/>
+    <xs:attribute name="FechaHora" type="xs:dateTime" use="required"/>
+    <xs:attribute name="ImagenAsociada" type="xs:boolean" use="required"/>
+    <xs:attribute name="NoElementos" type="xs:positiveInteger" use="optional"/>
+    <xs:attribute name="RadicadoAsociado" type="az:IdElementoType" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RetencionType">
+    <xs:annotation>
+      <xs:documentation>Caracteristicas de la retención para series y subseries</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Tiempo" type="xs:integer" use="required"/>
+    <xs:attribute name="Unidad" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength value="2"/>
+          <xs:enumeration value="A"/>
+          <xs:enumeration value="M"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="TipoDocumentalType">
+    <xs:annotation>
+      <xs:documentation>Caracteristicas de los tipos documentales</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Nombre" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength value="256"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="ExtensionDocDigital">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength value="10"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="Id" type="xs:integer"/>
+    <xs:attribute name="Soporte">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Fisico"/>
+          <xs:enumeration value="Digital"/>
+          <xs:enumeration value="Hibrido"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="EsObligatorio">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Si"/>
+          <xs:enumeration value="No"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DisposicionFinalType">
+    <xs:annotation>
+      <xs:documentation>Disposicion Final</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Id" use="required"/>
+    <xs:attribute name="Procedimiento" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="InfoTRDType">
+    <xs:sequence minOccurs="0">
+      <xs:element name="Titulo" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="120"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Version" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="20"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="NumeroActoAdministrativoAprobacion" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FechaActoAdministrativoAprobacion" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="NumeroActoAdministrativoConvalidacion" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FechaActoAdministrativoConvalidacion" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="NumeroActoAdministrativoAdopcion" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FechaActoAdministrativoAdopcion" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SerieType">
+    <xs:sequence minOccurs="0">
+      <xs:element name="RetencionFisicoGestion" type="az:RetencionType" minOccurs="0"/>
+      <xs:element name="RetencionFisicoCentral" type="az:RetencionType" minOccurs="0"/>
+      <xs:element name="DisposicionFinalFisico" type="az:DisposicionFinalType" minOccurs="0"/>
+      <xs:element name="DisposicionFinalDigital" type="az:DisposicionFinalType" minOccurs="0"/>
+      <xs:element name="ProcesosAsociados" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="512"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FuncionesAsociadas" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="512"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ModeloArchiving" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="512"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="TiposDocumentales" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TipoDocumental" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:complexContent>
+                  <xs:extension base="az:TipoDocumentalType"/>
+                </xs:complexContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Nombre" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength value="120"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="CodigoArchivistico" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength value="20"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="CodigoArchivisticoSeriePadre"/>
+    <xs:attribute name="Id">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:minExclusive value="3"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="NivelAcceso" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="SerieTypeVD">
+    <xs:sequence minOccurs="0">
+      <xs:element name="TiempoRetencion" type="az:RetencionType" minOccurs="0"/>
+      <xs:element name="DisposicionFinal" type="az:DisposicionFinalType" minOccurs="0"/>
+      <xs:element name="FuncionesAsociadas" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Nombre" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength value="120"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="CodigoArchivistico" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+          <xs:maxLength value="20"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:element name="BuscarPorLotes">
+    <xs:annotation>
+      <xs:documentation>Busqueda por Lotes de Consulta</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Item" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="IdDirectorio" use="required"/>
+      <xs:attribute name="OperadorCondicion" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="="/>
+            <xs:enumeration value="like"/>
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="PresentacionResultado" use="required">
+        <xs:annotation>
+          <xs:appinfo>
+            <altova:exampleValues>
+              <altova:example value="Links Usuario Compatido"/>
+              <altova:example value="Links Usuario Nombrado"/>
+            </altova:exampleValues>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="FechaLimiteConsulta"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://test.analitica.com.co/AZDigital_Pruebas/WebServices/AdminTabla.xsd</con:url><con:content><![CDATA[<!--edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Andres (A)-->
+<!--edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Andres Schlesinger (Analitica)-->
+<xs:schema targetNamespace="http://www.analitica.com.co/SGP/xsds/" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:sgp="http://www.analitica.com.co/SGP/xsds/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AdminTabla">
+    <xs:annotation>
+      <xs:documentation>AdminTabla (Seleccion, Insercion, Actualizacion y Eliminación sobre tablas)</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="Listar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Campo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Nombre" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Condiciones" type="sgp:CondicionesType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Agregar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Campo" type="sgp:CampoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Actualizar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Campo" type="sgp:CampoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="ValorLlave" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Eliminar">
+          <xs:complexType>
+            <xs:attribute name="ValorLlave" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:attribute name="Tabla" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AdminTablaRpt">
+    <xs:annotation>
+      <xs:documentation>Respuesta AdminTabla</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Tabla" type="sgp:TablaType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Tabla" type="xs:string" use="required"/>
+      <xs:attribute name="Operacion" type="xs:string" use="required"/>
+      <xs:attribute name="NoRegistros" type="xs:unsignedInt" use="required"/>
+      <xs:attribute name="IdGenerado"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CondicionType">
+    <xs:annotation>
+      <xs:documentation>Tipo Condicion</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Campo" type="xs:string" use="required"/>
+    <xs:attribute name="Operador" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="="/>
+          <xs:pattern value=">"/>
+          <xs:pattern value=">="/>
+          <xs:pattern value="&lt;"/>
+          <xs:pattern value="&lt;="/>
+          <xs:pattern value="!="/>
+          <xs:pattern value="like"/>
+          <xs:pattern value="is"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="Valor" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="CondicionesType">
+    <xs:annotation>
+      <xs:documentation>Tipo Lista de Condiciones</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Condicion" type="sgp:CondicionType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Agrupamiento" default="and">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="and"/>
+          <xs:pattern value="or"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="CampoType">
+    <xs:annotation>
+      <xs:documentation>Tipo Campo para AdminTabla</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Nombre" type="xs:string" use="required"/>
+    <xs:attribute name="Valor" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="TablaType">
+    <xs:annotation>
+      <xs:documentation>Tipo Tabla</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="fil" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://test.analitica.com.co/AZDigital_Pruebas/WebServices/Errores.xsd</con:url><con:content><![CDATA[<!--edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Andres Schlesinger (Analitica)-->
+<!--edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Sixto (Sixto)-->
+<xs:schema targetNamespace="http://www.analitica.com.co/Esquemas/Errores/" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://www.analitica.com.co/Esquemas/Errores/">
+  <xs:element name="Errores">
+    <xs:annotation>
+      <xs:documentation>Comment describing your root element</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Error" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="Codigo" type="xs:string" use="required"/>
+                <xs:attribute name="Linea" type="xs:unsignedInt" use="optional"/>
+                <xs:attribute name="Referencia" type="xs:string" use="optional"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Tipo" type="xs:string" use="required"/>
+      <xs:attribute name="Aplicacion" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints/><con:operation id="340f45c2-d4d9-46aa-8748-39b84ca4d37b" isOneWay="false" action="urn:#Escaneo" name="Escaneo" bindingOperationName="Escaneo" type="Notification" inputName="" receivesAttachments="false" anonymous="optional"><con:settings/><con:call id="5a7317e5-e21c-4c5c-b382-5d24b75bbbff" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Escaneo IdReferencia="?">\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <Expediente DirectorioId="?" DirectorioNombre="?" DirectorioPath="?">\r
+            <!--Optional:-->\r
+            <Radicado Id="?" Numero="?" FechaHora="?" ImagenAsociada="?" NoElementos="?" RadicadoAsociado="?"/>\r
+            <!--Zero or more repetitions:-->\r
+            <Archivo ArchivoId="?" ArchivoNombre="?" ArchivoPath="?"/>\r
+         </Expediente>\r
+         <Documento ArchivoId="?" ArchivoNombre="?" ArchivoPath="?">\r
+            <!--Optional:-->\r
+            <Radicado Id="?" Numero="?" FechaHora="?" ImagenAsociada="?" NoElementos="?" RadicadoAsociado="?"/>\r
+         </Documento>\r
+      </xsds:Escaneo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Escaneo"/></con:call></con:operation><con:operation id="84dcee2d-8277-4ccc-8c55-3d44837e7b3d" isOneWay="false" action="urn:#Radicacion" name="Radicacion" bindingOperationName="Radicacion" type="Notification" inputName="" receivesAttachments="false" anonymous="optional"><con:settings/><con:call id="80dd4683-d7d6-48ee-8a3f-5b6ef3b6e7cb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsds="http://www.analitica.com.co/AZDigital/xsds/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <xsds:Radicacion Id="?" Numero="?" FechaHora="?" ImagenAsociada="?" NoElementos="?" RadicadoAsociado="?"/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#Radicacion"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
